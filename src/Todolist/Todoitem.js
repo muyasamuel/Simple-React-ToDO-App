@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import classes from './Todoitem.module.css'
 
-function Todoitem() {
+function Todoitem({name}) {
   return (
-    <div>
-        <h2>go repair my car</h2>
+    <div className={classes.todo}>
+        <h2>{name}</h2>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Todoitem from './Todoitem';
 import classes from './Todolist.module.css'
 
 const DUMMY_TODOS = [
@@ -26,9 +27,9 @@ const DUMMY_TODOS = [
 
 function Todolist() {
   return (
-    <div className={classes.todo}>
+    <div className={classes.todos}>
         {DUMMY_TODOS.map(todo =>
-            <li>{todo.name}</li>)}
+        <Todoitem name={todo.name}/> )}
 
     </div>
   )
