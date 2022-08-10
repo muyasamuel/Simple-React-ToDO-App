@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './Todolist.module.css'
 
 const DUMMY_TODOS = [
     {
@@ -25,7 +26,7 @@ const DUMMY_TODOS = [
 
 function Todolist() {
   return (
-    <div>
+    <div className={classes.todo}>
         {DUMMY_TODOS.map(todo =>
             <li>{todo.name}</li>)}
 
