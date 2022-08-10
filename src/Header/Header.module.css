@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: brown;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+   
+ 
+}
+.header h1{
+    margin-left: -20%;
+
+
+}
+header p{
+   font-weight: 600;
+
+    
+
+}
+.header span {
+    font-size: 1.5rem;
+    background-color: blue;
+    border-radius: 25%;
+    color: #fff;
+    padding: 12px;
+}

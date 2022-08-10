@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import classes from './Header.module.css'
 
 function Header() {
   return (
-    <div>
+    <div className={classes.header}>
         <h1> Simple React ToDo</h1>
 
-        <p>Number of TOdOs </p>
+        <div>
+        <p>Number of TOdOs :  <span>10</span> </p>
+        
+        </div>
+
 
     </div>
   )
