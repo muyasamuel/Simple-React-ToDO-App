@@ -5,7 +5,7 @@ function Todoform() {
   return (
     <form className={classes.form}>
         <input type='text'  placeholder='Add your todo'/>
-        <button>Add Todo</button>
+        <button className={classes.actions}>Add Todo</button>
     </form>
  
   )
