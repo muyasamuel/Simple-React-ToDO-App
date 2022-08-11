@@ -2,14 +2,19 @@ import Header from './Header/Header';
 import './App.css';
 import Todolist from './Todolist/Todolist';
 import Todoform from './Todoform/Todoform';
+import { TodoProvider } from './Todo-context/TodoContext';
+
 
 function App() {
   return (
-    <div >
+    <TodoProvider>
         <Header />
         <Todoform />
         <Todolist />
-    </div>
+
+    </TodoProvider>
+        
+   
   );
 }
 

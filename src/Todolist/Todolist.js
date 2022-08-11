@@ -1,34 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { TodoContext } from '../Todo-context/TodoContext';
 import Todoitem from './Todoitem';
 import classes from './Todolist.module.css'
 
  
 
 function Todolist() {
-
-   const [todos, setTodos] =  useState([
-    {
-        id: 't1',
-        name: 'Do my react projects as planned '
-    },
-    {
-        id: 't2',
-        name: 'Go to the mall and get myself a new laptop '
-    },
-    {
-        id: 't3',
-        name: 'Go for aome household shopiing '
-    },
-    {
-        id: 't4',
-        name: 'Finish all my school assignments'
-    },
-    {
-        id: 't5',
-        name: 'Attend some works seminars '
-    }
-]);
-
+   const [todos ] = useContext(TodoContext)
 
 
   return (
